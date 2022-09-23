@@ -1,0 +1,4 @@
+*.pem
+data/
+.DS_Store
+.env

@@ -7,6 +7,7 @@ Contains scripts to setup TAS.
 - Neuron <https://github.com/LambdaTest/neuron>
 - JS Runners <https://github.com/LambdaTest/test-at-scale-js>
 - Test-at-Scale <https://github.com/LambdaTest/test-at-scale>
+- Test-at-Scale-js-smart-select <https://github.com/LambdaTest/test-at-scale-js-smart-select>
 
 ## Dev Onboarding
 

@@ -78,4 +78,4 @@ $ cd test-at-scale-scripts/mac_setup
 ``` bash
 $ bash mac_deployer.sh 
 ```
--This steps for linux distribution ubuntu if you are user of other distributions so you can change some command according to distribution.
+-These steps are for linux distribution ubuntu if you are user of other distributions so you can change some command according to distribution.

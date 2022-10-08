@@ -56,7 +56,7 @@ $ sudo apt-get install git-all
 ``` bash
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
--Then set PATH for Homebrew by running.
+- Then set PATH for Homebrew by running.
 ```bash
 $ echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/zuh/.profile
 $ echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/zuh/.profile

@@ -36,7 +36,7 @@ bash mac_deployer.sh
 **This script may ask for your root password in order to add entry in /etc/hosts.**
 
 
-#### Linux(Ubuntu):
+#### Linux(Ubuntu) Users:
 - Note: Dollar sign($) represents command, it isn't included in command. You must know the password of root.
 - First update system
 ``` bash

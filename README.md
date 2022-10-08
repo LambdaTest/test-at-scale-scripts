@@ -37,7 +37,7 @@ bash mac_deployer.sh
 
 
 #### Linux(Ubuntu):
--Note:  
+- Note:  
 - Dollar sign($) represents command. it does'nt include in command
 - You have know the password of root
 - First update system

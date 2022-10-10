@@ -55,7 +55,7 @@ github_app_private_key=github-app-private-key
 ```
 #### Obtaining the values for environment variables
 
-- db_pass: This is the password for the database. You can use any password you want. This password will be used to connect to the database from the application.
+- db_pass: This is the password for the database. You can use any password you want. This password will be used to connect to the database running in a mysql docker container locally from the application.
 
 - azure_acc_name: This is the name of the Azure account. You can find this in the Azure portal.
 

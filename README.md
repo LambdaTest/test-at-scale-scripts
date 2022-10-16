@@ -1,86 +1,98 @@
-# Test-at-scale
 
-Contains scripts to setup TAS.
+# Test At Scale Scripts
 
-- Laser <https://github.com/LambdaTest/laser>
-- Photon <https://github.com/LambdaTest/photon>
-- Neuron <https://github.com/LambdaTest/neuron>
-- JS Runners <https://github.com/LambdaTest/test-at-scale-js>
-- Test-at-Scale <https://github.com/LambdaTest/test-at-scale>
-- Test-at-Scale-js-smart-select <https://github.com/LambdaTest/test-at-scale-js-smart-select>
+This repository contains multiple scripts to setup up Test At Scale (TAS).
 
-## Dev Onboarding
+- Laser https://github.com/LambdaTest/laser
+- Photon https://github.com/LambdaTest/photon
+- Neuron https://github.com/LambdaTest/neuron
+- JS Runners https://github.com/LambdaTest/test-at-scale-js
+- Test-at-Scale https://github.com/LambdaTest/test-at-scale
+- Test-at-Scale-js-smart-select https://github.com/LambdaTest/test-at-scale-js-smart-select
 
-### Local System Setup
 
-#### Mac Users
 
-- Install [Homebrew](https://brew.sh/).
 
+## Installation for macOS using Homebrew
+
+**1.** Install [Homebrew.](https://brew.sh/)
+
+**2.** Type this command into your terminal:
 ```bash
-/bin/bash -c "$(curl -fsSL <https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh>)"
+  /bin/bash -c "$(curl -fsSL 
+  <https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh>)"
 ```
+**3.** Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) and start the program before proceeding to the next steps.
 
-- Install [Docker Desktop](https://www.docker.com/products/docker-desktop). Start the Docker Desktop Application before proceeding further.
+**4.** Add your machines [SSH keys to your GitHub Account.](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
-- Add your machine’s [SSH keys on GitHub](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+**5.** Create a new folder and paste the file **mac_deployer.sh** into it. Make sure you refer to the attachments in that folder.
 
-- Create a new folder and paste mac_deployer.sh (refer Attachments) in that folder.
-
-- Run the script using the command below. (You'll need to define credentials for various services and configurations of resources required by TestAtScale system)
+**6.** Run the bash script below. You will need to define your credentials for various services and resources required by the TAS system.
 
 ```bash
 bash mac_deployer.sh
 ```
 
-**This script may ask for your root password in order to add entry in /etc/hosts.**
+*This script may ask for your root password in order to add an entry into /etc/hosts.*
 
-### Enviroment variables
 
-```bash
-db_pass=db-pass
-azure_acc_name=azure-acc-name
-azure_acc_key=azure-acc-key
-github_client_id=github-client-id
-github_client_secret=github-client-secret
-gitlab_client_id=gitlab-client-id
-gitlab_client_secret=gitlab-client-secret
-bitbucket_client_id=bitbucket-client-id
-bitbucket_client_secret=bitbucket-client-secret
-github_app_app_name=github-app-app-id
-github_app_app_id=github-app-app-id
-github_app_client_id=github-app-client-id
-github_app_client_secret=github-app-client-secret
-github_app_private_key=github-app-private-key
-```
-#### Obtaining the values for environment variables
+## Environment Variables
 
-- db_pass: This is the password for the database. You can use any password you want. This password will be used to connect to the database running in a mysql docker container locally from the application.
+To run this project, you will need to add the following environment variables to your .env file
 
-- azure_acc_name: This is the name of the Azure account. You can find this in the Azure portal.
+`db-pass`
 
-- azure_acc_key: This is the key of the Azure account. You can find this in the Azure portal.
+`azure-acc-name`
 
-- github_client_id: This is the client id of the GitHub application. You can find this in the GitHub application settings. View more at <https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app>
+`azure-acc-key`
 
-- github_client_secret: This is the client secret of the GitHub application. You can find this in the GitHub application settings. View more at <https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app>
+`github-client-id`
 
-- gitlab_client_id: This is the client id of the GitLab application. You can find this in the GitLab application settings. View more at <https://docs.gitlab.com/ee/integration/oauth_provider.html>
+`github-client-secret`
 
-- gitlab_client_secret: This is the client secret of the GitLab application. You can find this in the GitLab application settings. View more at <https://docs.gitlab.com/ee/integration/oauth_provider.html>
+`gitlab-client-id`
 
-- bitbucket_client_id: This is the client id of the Bitbucket application. You can find this in the Bitbucket application settings. View more at <https://developer.atlassian.com/cloud/bitbucket/oauth-2/>
+`bitbucket-client-id`
 
-- bitbucket_client_secret: This is the client secret of the Bitbucket application. You can find this in the Bitbucket application settings. View more at <https://developer.atlassian.com/cloud/bitbucket/oauth-2/>
+`bitbucket-client-secret`
 
-- github_app_app_name: This is the name of the GitHub application. You can find this in the GitHub application settings. View more at <https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app>
+`github-app-app-id`
 
-- github_app_app_id: This is the app id of the GitHub application. You can find this in the GitHub application settings. View more at <https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app>
+`github-app-app-id`
 
-- github_app_client_id: This is the client id of the GitHub application. You can find this in the GitHub application settings. View more at <https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app>
+`github-app-client-id`
 
-- github_app_client_secret: This is the client secret of the GitHub application. You can find this in the GitHub application settings. View more at <https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app>
+`github-app-client-secret`
 
-- github_app_private_key: This is the private key of the GitHub application. You can find this in the GitHub application settings. View more at <https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app>
+`github-app-private-key`
+## How to obtain the Environment Variables
 
- 
+- **db_pass**:\
+     This is the password for the database. You can use any password you want. This password will be used to connect to the database running in a MySql docker container locally from the application.
+- **azure_acc_name:**   
+    This is the name of the Azure account. You can find this in the Azure portal.
+- **azure_acc_key:**\
+    This is the key to the Azure account. You can find this in the Azure portal.
+- **github_client_id:**   
+    This is the client id of the GitHub application. You can find this in the GitHub application settings. View more at https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app
+- **github_client_secret:**   
+    This is the client secret of the GitHub application. You can find this in the GitHub application settings. View more at https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app
+- **gitlab_client_id:**  
+    This is the client id of the GitLab application. You can find this in the GitLab application settings. View more at https://docs.gitlab.com/ee/integration/oauth_provider.html
+- **gitlab_client_secret:**   
+    This is the client secret of the GitLab application. You can find this in the GitLab application settings. View more at https://docs.gitlab.com/ee/integration/oauth_provider.html
+- **bitbucket_client_id:**   
+    This is the client id of the Bitbucket application. You can find this in the Bitbucket application settings. View more at https://developer.atlassian.com/cloud/bitbucket/oauth-2/
+- **bitbucket_client_secret:**   
+    This is the client secret of the Bitbucket application. You can find this in the Bitbucket application settings. View more at https://developer.atlassian.com/cloud/bitbucket/oauth-2/
+- **github_app_app_name:**  
+    This is the name of the GitHub application. You can find this in the GitHub application settings. View more at https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app
+- **github_app_app_id:** 
+    This is the app id of the GitHub application. You can find this in the GitHub application settings. View more at https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app
+- **github_app_client_id:**
+    This is the client id of the GitHub application. You can find this in the GitHub application settings. View more at https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app
+- **github_app_client_secret:**  
+    This is the client secret of the GitHub application. You can find this in the GitHub application settings. View more at https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app
+- **github_app_private_key:**\
+    This is the private key of the GitHub application. You can find this in the GitHub application settings. View more at https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app

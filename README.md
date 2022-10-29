@@ -55,32 +55,19 @@ github_app_private_key=github-app-private-key
 ```
 #### Obtaining the values for environment variables
 
-- db_pass: This is the password for the database. You can use any password you want. This password will be used to connect to the database running in a mysql docker container locally from the application.
-
-- azure_acc_name: This is the name of the Azure account. You can find this in the Azure portal.
-
-- azure_acc_key: This is the key of the Azure account. You can find this in the Azure portal.
-
-- github_client_id: This is the client id of the GitHub application. You can find this in the GitHub application settings. View more at <https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app>
-
-- github_client_secret: This is the client secret of the GitHub application. You can find this in the GitHub application settings. View more at <https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app>
-
-- gitlab_client_id: This is the client id of the GitLab application. You can find this in the GitLab application settings. View more at <https://docs.gitlab.com/ee/integration/oauth_provider.html>
-
-- gitlab_client_secret: This is the client secret of the GitLab application. You can find this in the GitLab application settings. View more at <https://docs.gitlab.com/ee/integration/oauth_provider.html>
-
-- bitbucket_client_id: This is the client id of the Bitbucket application. You can find this in the Bitbucket application settings. View more at <https://developer.atlassian.com/cloud/bitbucket/oauth-2/>
-
-- bitbucket_client_secret: This is the client secret of the Bitbucket application. You can find this in the Bitbucket application settings. View more at <https://developer.atlassian.com/cloud/bitbucket/oauth-2/>
-
-- github_app_app_name: This is the name of the GitHub application. You can find this in the GitHub application settings. View more at <https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app>
-
-- github_app_app_id: This is the app id of the GitHub application. You can find this in the GitHub application settings. View more at <https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app>
-
-- github_app_client_id: This is the client id of the GitHub application. You can find this in the GitHub application settings. View more at <https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app>
-
-- github_app_client_secret: This is the client secret of the GitHub application. You can find this in the GitHub application settings. View more at <https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app>
-
-- github_app_private_key: This is the private key of the GitHub application. You can find this in the GitHub application settings. View more at <https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app>
-
- 
+| Variable    | Function | Find it here |
+| :---------- | :-------- | :--------- |
+| db_pass     | Password for the database will be used to connect to the database running in a mysql docker container locally from the application.| You can use any password you want.|
+| azure_acc_name | Name of the Azure account.| Azure portal|
+| azure_acc_key | Key of the Azure account.| Azure portal|
+| github_client_id | Client ID of the GitHub application.| [GitHub application settings](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app)|
+| github_client_secret | Client secret of the GitHub application.| [GitHub application settings](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app)|
+| gitlab_client_id | Client ID of the GitLab application.| [GitLab application settings](https://docs.gitlab.com/ee/integration/oauth_provider.html)|
+| gitlab_client_secret | Client secret of the GitLab application.| [GitLab application settings](https://docs.gitlab.com/ee/integration/oauth_provider.html)|
+| bitbucket_client_id | Client ID of the Bitbucket application.| [Bitbucket application settings](https://developer.atlassian.com/cloud/bitbucket/oauth-2/)|
+| bitbucket_client_secret | Client secret of the Bitbucket application.| [Bitbucket application settings](https://developer.atlassian.com/cloud/bitbucket/oauth-2/)|
+| github_app_app_name | Name of the GitHub application.| [GitHub application settings](https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app)|
+| github_app_app_id | App ID of the GitHub application.| [GitHub application settings](https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app)|
+| github_app_client_id | Client ID of the GitHub application.| [GitHub application settings](https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app)|
+| github_app_client_secret | Client secret of the GitHub application.| [GitHub application settings](https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app)|
+| github_app_private_key | Private key of the GitHub application.| [GitHub application settings](https://docs.github.com/en/developers/apps/building-github-apps/creating-a-github-app)|

@@ -48,7 +48,7 @@ body:
 - type: dropdown
   attributes:
     label: Are you willing to submit a Pull Request, if the bug is confirmed ?
-  options:
+    options:
       - Yes, I am willing to submit a PR!
       - No
   validations:

@@ -1,0 +1,55 @@
+name: 🐞 Bug report
+description: Create a bug report to help us improve Test-at-scale-scripts
+title: "[Bug]: "
+labels: [bug, needs-triaging]
+assignees:
+- nevilm-lt
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thanks for taking the time to fill out this bug report! Please fill the form in English.
+- type: checkboxes
+  attributes:
+    label: Is there an existing issue for this?
+    description: Please search to see if an issue already exists for the bug you encountered.
+    options:
+    - label: I have searched the existing issues
+      required: true
+- type: textarea
+  attributes:
+    label: What is the current behavior?
+    description: Add a brief description of what you are experiencing.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: What is the expected behavior?
+    description: A brief description of what you expect.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Steps To Reproduce
+    description: Add steps to reproduce this behavior, include console / network logs & screenshots
+    placeholder: |
+      1. 
+      2. 
+      3.
+      4.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Any possible solution to this problem?
+    description: Add a possible solution that can resolve this issue. 
+  validations:
+    required: false
+- type: dropdown
+  attributes:
+    label: Are you willing to submit a Pull Request, if the bug is confirmed ?
+  options:
+      - Yes, I am willing to submit a PR!
+      - No
+  validations:
+    required: true

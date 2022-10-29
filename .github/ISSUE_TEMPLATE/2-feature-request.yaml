@@ -2,8 +2,6 @@ name: 🛠️ Feature request
 description: Suggest an idea to improve Test-at-scale
 title: "[Feature]: "
 labels: [enhancement]
-assignees:
-- anmol-LT
 body:
 - type: checkboxes
   attributes:

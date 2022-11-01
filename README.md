@@ -35,6 +35,73 @@ bash mac_deployer.sh
 
 **This script may ask for your root password in order to add entry in /etc/hosts.**
 
+#### For Windows Users:
+
+For window users you have to install Windows Subsystem for Linux (WSL) first.
+- Run the command prompt as an administator.
+
+```bash
+wsl --install
+```
+- Next you need to restart system upon which the ubuntu terminal will automatically appear.
+- Create a username and set the password.
+
+- Next, you need to update the system by running the following command:
+
+``` bash
+$ sudo apt-get update
+```
+
+- You have to install recent version of GCC and glibc.
+
+```bash
+$ sudo apt-get install gcc gilbc
+```
+
+- Next you need to add Git
+
+``` bash
+$ sudo apt-get install git-all
+```
+
+- Install docker from the [website download](https://docs.docker.com/desktop/install/ubuntu/)
+
+- Now install Homebrew
+
+``` bash
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+- Then next you need to set the PATH for Homebrew by running the following commands:
+
+```bash
+$ echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/zuh/.profile
+$ echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/zuh/.profile
+$ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+```
+
+- Now install gcc by brew
+
+```bash
+$ brew install gcc
+```
+- After installing gcc, clone the github repository "LambdaTest/test-at-scale-scripts" using the following command:
+
+```bash
+$ git clone https://github.com/LambdaTest/test-at-scale-scripts.git
+```
+
+- Now check and go to newly generated directory name "test-at-scale-scripts"
+
+```bash
+$ cd test-at-scale-scripts/mac_setup
+```
+
+- Finally you need to run the script:
+``` bash
+$ bash mac_deployer.sh 
+```
+
 ### Enviroment variables
 
 ```bash
